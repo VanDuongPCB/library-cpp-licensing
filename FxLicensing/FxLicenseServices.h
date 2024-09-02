@@ -9,6 +9,8 @@ class FX_LICENSING_API FxLicenseServices : QObject
 public:
 	explicit FxLicenseServices( QObject* parent = nullptr );
 	~FxLicenseServices();
+	const QString GetLicenseID( const QString appName );
+	bool CheckLicenseKey( const QString key );
 
 private:
 	void init();
